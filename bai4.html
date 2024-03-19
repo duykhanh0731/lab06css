@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+        .custom-frame {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .folded-corner {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 4px;
+            height: 10px;
+            border-radius: 1px;
+            border-style:solid;
+            border-width: 10px 30px 30px 20px;
+            border-color: black white white  red;
+           
+            
+        }
+    </style>
+    <title>Folded Corner Text Box</title>
+</head>
+<body>
+    <div class="custom-frame">
+        <p>Your text goes here...</p>
+        <div class="folded-corner"></div>
+    </div>
+</body>
+</html>

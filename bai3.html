@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .vien {
-            border: 1px solid black;
-            border-radius: 0 0 10px 0; /* Cấu hình góc cuối bên phải */
-            padding: 10px; /* Tăng độ dày để viền không che phủ nội dung */
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-        }
-    </style>
 </head>
-<body>
-    <div class="vien">
-            Nguyenduykhanh
+<style>
+    .curlycontainer {
+        border: 1px solid #b8b8b8;
+        margin-bottom: 1em;
+        width: 300px;
+    }
+    .curlycontainer .innerdiv {
+        background: transparent url(brcorner.gif) bottom right no-repeat;
+        padding: 1px 4px 15px 5px;
+        
+    }
+    .folded-corner {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 10px 10px 0;
+                border-color: transparent #333 red transparent;
+                background-color: #333;
+            }
+    </style>
+    </head>
+    <body>
+    <div class="curlycontainer">
+        <div class="innerdiv">
+            <b>Some title</b> <br />Some text here. Some text here. Some text here.<br />
+            Some text here. Some text here. Some text here.<br />Some text here. Some
+            text here. Some text here.<br />Some text here. Some text here.
+            <div class="folded-corner"></div>
+        </div>
+    
     </div>
-</body>
+    
+    </body>
 </html>
